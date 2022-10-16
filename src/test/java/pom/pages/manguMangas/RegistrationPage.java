@@ -1,6 +1,5 @@
 package pom.pages.manguMangas;
 
-import org.openqa.selenium.By;
 import pom.pages.Common;
 import pom.pages.Locators;
 

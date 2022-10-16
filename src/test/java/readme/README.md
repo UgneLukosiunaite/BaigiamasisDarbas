@@ -2,7 +2,7 @@
 Pasirinkta testuoti svetainė: https://mangumangas.lt
 
 # Tests:
-1. Try register :
+1. Try register:
    * click menu button;
    * click "prisijungti/registruotis";
    * click "Dar neturite paskyros? Registruokites"
@@ -14,7 +14,7 @@ Pasirinkta testuoti svetainė: https://mangumangas.lt
    * click on "Perskaiciau ir sutinku su privatumo politika";
    * click "registruotis".
 
-2. Try signIn :
+2. Try signIn:
    * click menu button;
    * click "prisijungti/registruotis";
    * enter email;
@@ -38,7 +38,7 @@ Pasirinkta testuoti svetainė: https://mangumangas.lt
    * click on "Perskaiciau ir sutinku su privatumo politika";
    * click "registruotis".
 
-5. Try registration with invalid phone number;
+5. Try registration with invalid phone number:
    * click "prisijungti/registruotis";
    * click "Dar neturite paskyros? Registruokites"
    * enter name, surname;
