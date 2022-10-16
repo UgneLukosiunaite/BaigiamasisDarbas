@@ -19,6 +19,11 @@ public class Locators {
             public static By agreeTermsCheckbox = By.xpath("//form[@class='form']/div[6]/div/input");
             public static By submitRegistrationBtn = By.xpath("//div[@class='form__actions']/button");
         }
+        public static class SignInPage{
+            public static By logInBtn = By.xpath("//div[@class='form__actions']/button");
+            public static By emailBtn = By.xpath("//div[@class='modal-content']/form/div[1]/input");
+            public static By passwordBtn = By.xpath("//div[@class='input-password']/input");
+        }
 
     }
 }
