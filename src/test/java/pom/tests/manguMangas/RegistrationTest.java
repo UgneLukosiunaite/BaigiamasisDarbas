@@ -1,6 +1,5 @@
 package pom.tests.manguMangas;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pom.pages.manguMangas.RegistrationPage;
@@ -16,7 +15,7 @@ public class RegistrationTest extends TestBase {
 
     @Test
     private void testSuccessfulRegistration() {
-        RegistrationPage.clickLogin();
+        RegistrationPage.clickOpenLoginPage();
         RegistrationPage.clickRegister();
         RegistrationPage.enterFullName("Saule Sauliene");
         RegistrationPage.enterEmail("ul@gmail.com");

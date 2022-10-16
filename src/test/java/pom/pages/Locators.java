@@ -21,8 +21,8 @@ public class Locators {
         }
         public static class SignInPage{
             public static By logInBtn = By.xpath("//div[@class='form__actions']/button");
-            public static By emailBtn = By.xpath("//div[@class='modal-content']/form/div[1]/input");
-            public static By passwordBtn = By.xpath("//div[@class='input-password']/input");
+            public static By emailInput = By.xpath("//div[@class='modal-content']/form/div[1]/input");
+            public static By passwordInput = By.xpath("//div[@class='input-password']/input");
         }
 
     }

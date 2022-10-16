@@ -8,7 +8,7 @@ public class RegistrationPage {
         Common.openUrl(url);
     }
 
-    public static void clickLogin() {
+    public static void clickOpenLoginPage() {
         Common.clickElement(
                 Locators.ManguMangas.MainPage.buttonLogInPage
         );
