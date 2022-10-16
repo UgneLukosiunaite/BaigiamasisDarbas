@@ -8,6 +8,17 @@ public class RegistrationPage {
         Common.openUrl(url);
     }
 
+    public static void clickLogin() {
+        Common.clickElement(
+                Locators.ManguMangas.MainPage.buttonLogInPage
+        );
+    }
+
+    public static void clickRegister() {
+        Common.clickElement(
+                Locators.ManguMangas.MainPage.buttonRegistration
+        );    }
+
     public static void enterFullName(String text) {
         Common.sendKeysToElement(
                 text,

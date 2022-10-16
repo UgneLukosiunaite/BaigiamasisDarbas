@@ -16,6 +16,15 @@ public class RegistrationTest extends TestBase {
 
     @Test
     private void testSuccessfulRegistration() {
-
+        RegistrationPage.clickLogin();
+        RegistrationPage.clickRegister();
+        RegistrationPage.enterFullName("Saule Sauliene");
+        RegistrationPage.enterEmail("ul@gmail.com");
+        RegistrationPage.enterPhoneNumber("+37067772133");
+        RegistrationPage.enterPassword("myPassword");
+        RegistrationPage.enterPassword2("myPassword");
+        RegistrationPage.clickAgreeTerms();
+        RegistrationPage.submitRegistration();
     }
+
 }
