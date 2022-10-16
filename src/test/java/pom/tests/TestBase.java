@@ -16,7 +16,6 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-
-//        Common.closeDriver();
+        Common.closeDriver();
     }
 }
