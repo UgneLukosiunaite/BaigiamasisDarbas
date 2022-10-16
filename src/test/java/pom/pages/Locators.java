@@ -24,6 +24,10 @@ public class Locators {
             public static By emailInput = By.xpath("//div[@class='modal-content']/form/div[1]/input");
             public static By passwordInput = By.xpath("//div[@class='input-password']/input");
         }
+        public static class SignOutPage{
+            public static By profileMenuBtn = By.xpath("//div[@class='header__profile']/div/button");
+            public static By logOutBtn = By.xpath("//ul[@class='dropdown__list']/li[5]/button");
 
+        }
     }
 }

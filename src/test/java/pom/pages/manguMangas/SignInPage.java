@@ -5,6 +5,14 @@ import pom.pages.Locators;
 import pom.tests.TestBase;
 
 public class SignInPage extends TestBase {
+
+    public static void signIn() {
+        clickOpenLoginPage();
+        enterEmail("ul@gmail.com");
+        enterPassword("myPassword");
+        clickLogin();
+    }
+
     public static void enterEmail(String text) {
         Common.sendKeysToElement(
                 text,
@@ -29,6 +37,10 @@ public class SignInPage extends TestBase {
         Common.clickElement(
                 Locators.ManguMangas.SignInPage.logInBtn
         );
+    }
+
+    public static String getSignedInUserEmail(){
+        return Common.getElementText(Locators.ManguMangas.SignOutPage.profileMenuBtn);
     }
 
 

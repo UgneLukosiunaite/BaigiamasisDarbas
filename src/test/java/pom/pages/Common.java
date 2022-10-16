@@ -55,18 +55,4 @@ public class Common {
         return getElement(locator).getText();
     }
 
-    public static void selectOptionByValue(By locator, String value) {
-        WebElement webElement = getElement(locator);
-        Select selectElement = new Select(webElement);
-        selectElement.selectByValue(value);
-    }
-
-    public static String getElementAttributeValue(By locator, String attributeName) {
-        return getElement(locator).getAttribute(attributeName);
-    }
-
-    public static void waitForElementToBeClickable(By locator) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
-        wait.until(ExpectedConditions.elementToBeClickable(locator));
-    }
 }

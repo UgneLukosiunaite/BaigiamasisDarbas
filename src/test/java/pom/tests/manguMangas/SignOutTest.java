@@ -5,9 +5,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pom.pages.manguMangas.RegistrationPage;
 import pom.pages.manguMangas.SignInPage;
+import pom.pages.manguMangas.SignOutPage;
 import pom.tests.TestBase;
 
-public class SignInTest extends TestBase {
+public class SignOutTest extends TestBase {
     @BeforeMethod
     @Override
     public void setUp() {
@@ -16,13 +17,13 @@ public class SignInTest extends TestBase {
     }
 
     @Test
-    private void testSignIn() {
+    private void testSignOut() {
         SignInPage.signIn();
+        SignOutPage.sleep();
+        SignOutPage.signOut();
+        SignOutPage.sleep();
+        String profileMenuBtnText = SignOutPage.getProfileMenuBtnText();
 
-        String signedInEmail = SignInPage.getSignedInUserEmail();
-
-        Assert.assertEquals(signedInEmail, "ul@gmail.com");
+        Assert.assertEquals(profileMenuBtnText, "Prisijungti / Registruotis");
     }
-
-
 }
