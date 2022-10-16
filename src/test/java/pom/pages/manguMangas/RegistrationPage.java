@@ -1,5 +1,6 @@
 package pom.pages.manguMangas;
 
+import org.openqa.selenium.By;
 import pom.pages.Common;
 import pom.pages.Locators;
 
@@ -31,6 +32,13 @@ public class RegistrationPage {
                 text,
                 Locators.ManguMangas.RegistrationForm.emailInput
         );
+    }
+
+    public static String getInvalidEmailText(){
+        return Common.getElementText(Locators.ManguMangas.RegistrationForm.invalidEmailErrorText);
+    }
+    public static String getInvalidPhoneNumberText(){
+        return Common.getElementText(Locators.ManguMangas.RegistrationForm.invalidPhoneNumberErrorText);
     }
 
     public static void enterPhoneNumber(String text) {

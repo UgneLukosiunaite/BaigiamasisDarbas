@@ -18,6 +18,9 @@ public class Locators {
             public static By password2Input = By.xpath("//form[@class='form']/div[5]/div/input");
             public static By agreeTermsCheckbox = By.xpath("//form[@class='form']/div[6]/div/input");
             public static By submitRegistrationBtn = By.xpath("//div[@class='form__actions']/button");
+
+            public static By invalidEmailErrorText = By.xpath("//form[@class='form']/div[2]/div");
+            public static By invalidPhoneNumberErrorText = By.xpath("//form[@class='form']/div[3]/div");
         }
         public static class SignInPage{
             public static By logInBtn = By.xpath("//div[@class='form__actions']/button");
