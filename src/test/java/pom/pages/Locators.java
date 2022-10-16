@@ -16,7 +16,8 @@ public class Locators {
             public static By phoneNumberInput = By.xpath("//input[@id='@id='ff-15']");
             public static By passwordInput = By.xpath("//input[@id='@id='ff-16']");
             public static By password2Input = By.xpath("//input[@id='@id='ff-17']");
-            public static By agreeTermsCheckbox = By.xpath("////div[@class='form__actions']/button");
+            public static By agreeTermsCheckbox = By.xpath("//input[@id='@id='ff-18']");
+            public static By submitRegistrationBtn = By.xpath("//div[@class='form__actions']/button");
         }
 
     }
