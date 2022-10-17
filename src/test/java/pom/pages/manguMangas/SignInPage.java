@@ -1,17 +1,9 @@
 package pom.pages.manguMangas;
-
 import pom.pages.Common;
 import pom.pages.Locators;
 import pom.tests.TestBase;
 
 public class SignInPage extends TestBase {
-
-    public static void signIn() {
-        clickOpenLoginPage();
-        enterEmail("ul@gmail.com");
-        enterPassword("myPassword");
-        clickLogin();
-    }
 
     public static void enterEmail(String text) {
         Common.sendKeysToElement(
@@ -42,6 +34,8 @@ public class SignInPage extends TestBase {
     public static String getSignedInUserEmail(){
         return Common.getElementText(Locators.ManguMangas.SignOutPage.profileMenuBtn);
     }
-
+    public static void open(String url) {
+        Common.openUrl(url);
+    }
 
 }
